@@ -45,13 +45,13 @@ class Py3status:
                 internet_radio = True
 
             if artist and title:
-                now_playing = '♫ {} - {}'.format(artist, title)
+                now_playing = u'♫ {} - {}'.format(artist, title)
             elif artist:
-                now_playing = '♫ {}'.format(artist)
+                now_playing = u'♫ {}'.format(artist)
             elif title:
-                now_playing = '♫ {}'.format(title)
+                now_playing = u'♫ {}'.format(title)
             elif internet_radio:
-                now_playing = '♫ Internet Radio'
+                now_playing = u'♫ Internet Radio'
 
         return now_playing
 
